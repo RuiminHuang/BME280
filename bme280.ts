@@ -161,7 +161,7 @@ namespace BME280 {
     }
 
     /**
-     * set I2C address,default 0x77.
+     * I2C address default 0x77.
      */
     //% blockId="BME280_SET_ADDRESS" block="set bme280 device address %addr"
     //% weight=50 blockGap=8
