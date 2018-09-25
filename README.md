@@ -1,4 +1,4 @@
-# BME280 Environmental Sensor
+# PXT package for micro:bit to drive BME280 Environmental Sensor
 
 temperature humidity and pressure sensor pxt package
 
