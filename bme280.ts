@@ -113,19 +113,19 @@ namespace BME280 {
     }
 
     /**
-     * get pressure
+     * get pressure(Pa)
      */
-    //% blockId="BME280_GET_PRESSURE" block="Pressure(Pa)"
-    //% weight=90 blockGap=8
+    //% blockId="BME280_GET_PRESSURE" block="pressure"
+    //% weight=80 blockGap=8
     export function pressure(): number {
         calData();
         return P;
     }
 
     /**
-     * get temperature
+     * get temperature(*C)
      */
-    //% blockId="BME280_GET_TEMPERATURE" block="Temperature(*C)"
+    //% blockId="BME280_GET_TEMPERATURE" block="temperature"
     //% weight=80 blockGap=8
     export function temperature(): number {
         calData();
@@ -133,10 +133,10 @@ namespace BME280 {
     }
 
     /**
-     * get humidity
+     * get humidity(%RH)
      */
-    //% blockId="BME280_GET_HUMIDITY" block="Humidity(%RH)"
-    //% weight=70 blockGap=8
+    //% blockId="BME280_GET_HUMIDITY" block="humidity"
+    //% weight=80 blockGap=8
     export function hunidity(): number {
         calData();
         return H;
@@ -145,8 +145,8 @@ namespace BME280 {
     /**
      * power on
      */
-    //% blockId="BME280_FORCE_MODE" block="Force Mode On"
-    //% weight=60 blockGap=8
+    //% blockId="BME280_FORCE_MODE" block="force mode on"
+    //% weight=61 blockGap=8
     export function ForceMode() {
         setreg(0xF4, 0x2F)
     }
@@ -154,8 +154,8 @@ namespace BME280 {
     /**
      * power off
      */
-    //% blockId="BME280_NORMAL_MODE" block="Normal Mode On"
-    //% weight=50 blockGap=8
+    //% blockId="BME280_NORMAL_MODE" block="normal mode on"
+    //% weight=60 blockGap=8
     export function NormalMode() {
         setreg(0xF4, 0)
     }
@@ -164,7 +164,7 @@ namespace BME280 {
      * set I2C address
      */
     //% blockId="BME280_SET_ADDRESS" block="set bme280 device address %addr"
-    //% weight=40 blockGap=8
+    //% weight=50 blockGap=8
     export function SetAddress(addr: BME280_I2C_ADDRESS) {
         BME280_I2C_ADDR = addr
     }

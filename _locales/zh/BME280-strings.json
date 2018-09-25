@@ -1,7 +1,7 @@
 {
-	"BME280.pressure|block":"获取气压(Pa)",
-	"BME280.temperature|block":"获取温度(*C)",
-	"BME280.hunidity|block":"获取湿度(%RH)",
+	"BME280.pressure|block":"获取气压",
+	"BME280.temperature|block":"获取温度",
+	"BME280.hunidity|block":"获取湿度",
 	"BME280.ForceMode|block":"运行模式",
 	"BME280.NormalMode|block":"低功耗模式",
 	"BME280.SetAddress|block":"设置BME280器件地址|%addr|"
