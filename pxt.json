@@ -1,0 +1,19 @@
+{
+    "name": "BME280",
+    "version": "0.0.1",
+    "description": "temperature humidity and pressure sensor pxt package",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "bme280.ts",
+        "_locales/zh/BME280-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
